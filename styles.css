@@ -1,0 +1,113 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: rgb(216, 216, 216);
+  font-family: "Montserrat", sans-serif;
+}
+
+.title-bar {
+  background-color: rgb(52, 53, 0);
+  display: flex;
+  justify-content: space-around;
+  padding: 5vh;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.9em;
+}
+
+.homebtn {
+  margin-right: 20px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.2em;
+  background: rgb(94, 95, 1);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.homebtn:hover {
+  transition: background 0.3s;
+  background: rgb(149, 151, 1);
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  margin-right: 40px;
+  align-self: center;
+  justify-self: center;
+}
+
+.inner-container {
+  /* align-self: center;
+  justify-self: center; */
+  border-radius: 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  margin: 50px;
+  width: 90%;
+  height: fit-content;
+  background-color: rgb(235, 235, 235);
+  -webkit-box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.42);
+}
+
+.pic-box {
+  position: absolute;
+  left: 10px;
+  border-radius: 5px;
+  /* padding-left: 50px; */
+  grid-column: 1/2;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.text-box {
+  grid-column: 2/-1;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  padding-left: 10px;
+  align-self: center;
+  justify-self: center;
+}
+
+h3 {
+  text-decoration: underline;
+}
+.text {
+  margin: 10px;
+}
+.text-box span {
+  font-size: 0.9em;
+}
+.slink {
+  text-decoration: none;
+  font-size: 1em;
+  margin-right: 10px;
+  padding-right: 10px;
+  /* font-weight: bold; */
+}
+
+.slink:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
